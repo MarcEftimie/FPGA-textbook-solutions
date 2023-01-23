@@ -1,0 +1,23 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Jan 23 20:15:24 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/chapter2/gate_level_greater_than_circuit/greater_than_2_bit.fst"
+[dumpfile_mtime] "Mon Jan 23 20:15:16 2023"
+[dumpfile_size] 633
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/chapter2/gate_level_greater_than_circuit/testbenches/sy"
+[timestart] 0
+[size] 1846 1016
+[pos] -201 -201
+*-12.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] greater_than_2_bit_tb.
+[sst_width] 233
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@28
+greater_than_2_bit_tb.UUT.a[1:0]
+greater_than_2_bit_tb.UUT.b[1:0]
+greater_than_2_bit_tb.UUT.out
+[pattern_trace] 1
+[pattern_trace] 0

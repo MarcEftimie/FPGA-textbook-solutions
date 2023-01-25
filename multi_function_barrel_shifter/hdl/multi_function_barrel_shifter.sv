@@ -1,4 +1,8 @@
+`timescale 1ns/1ps
+`default_nettype none
+
 module multi_function_barrel_shifter(
+    input wire clk,
     input wire [7:0] data_i,
     input wire [2:0] shift_amount_i,
     input wire shift_direction_i,
@@ -29,4 +33,4 @@ module multi_function_barrel_shifter(
         } : shifted_data;
     end
 
-endmodule;
+endmodule

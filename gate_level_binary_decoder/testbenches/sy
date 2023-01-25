@@ -1,0 +1,23 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Tue Jan 24 05:28:54 2023
+[*]
+[dumpfile] "/home/marc/FPGA_Book_Solutions/chapter2/gate_level_binary_decoder/decoder_4_to_16.fst"
+[dumpfile_mtime] "Tue Jan 24 05:28:45 2023"
+[dumpfile_size] 884
+[savefile] "/home/marc/FPGA_Book_Solutions/chapter2/gate_level_binary_decoder/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -1 -1
+*-12.000000 2650 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] decoder_4_to_16_tb.
+[sst_width] 233
+[signals_width] 102
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@29
+decoder_4_to_16_tb.UUT.a[3:0]
+decoder_4_to_16_tb.UUT.ena
+decoder_4_to_16_tb.UUT.out[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

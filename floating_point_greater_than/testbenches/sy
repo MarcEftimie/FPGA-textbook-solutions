@@ -1,0 +1,23 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Thu Jan 26 03:55:21 2023
+[*]
+[dumpfile] "/home/marc/FPGA_Book_Solutions/floating_point_greater_than/floating_point_greater_than.fst"
+[dumpfile_mtime] "Thu Jan 26 03:53:59 2023"
+[dumpfile_size] 17631
+[savefile] "/home/marc/FPGA_Book_Solutions/floating_point_greater_than/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -39 -39
+*-16.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] floating_point_greater_than_tb.
+[sst_width] 233
+[signals_width] 86
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@29
+floating_point_greater_than_tb.UUT.a[12:0]
+floating_point_greater_than_tb.UUT.b[12:0]
+floating_point_greater_than_tb.UUT.gt
+[pattern_trace] 1
+[pattern_trace] 0

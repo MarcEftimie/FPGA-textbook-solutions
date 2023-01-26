@@ -1,0 +1,22 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Thu Jan 26 02:45:09 2023
+[*]
+[dumpfile] "/home/marc/FPGA_Book_Solutions/BCD_incrementor/BCD_incrementor.fst"
+[dumpfile_mtime] "Thu Jan 26 02:45:07 2023"
+[dumpfile_size] 1174
+[savefile] "/home/marc/FPGA_Book_Solutions/BCD_incrementor/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -1 -1
+*-11.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BCD_incrementor_tb.
+[sst_width] 233
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@29
+BCD_incrementor_tb.UUT.BCD_in[11:0]
+BCD_incrementor_tb.UUT.BCD_out[11:0]
+[pattern_trace] 1
+[pattern_trace] 0

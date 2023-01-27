@@ -1,28 +1,30 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Thu Jan 26 18:09:47 2023
+[*] Fri Jan 27 22:27:36 2023
 [*]
-[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/floating_point_signed_integer_conversion/int_to_float_converter.fst"
-[dumpfile_mtime] "Thu Jan 26 18:09:37 2023"
-[dumpfile_size] 670
-[savefile] "/home/marc/projects/FPGA_Book_Solutions/floating_point_signed_integer_conversion/testbenches/sy"
-[timestart] 351
-[size] 1846 1016
+[dumpfile] "/home/marc/FPGA_Book_Solutions/floating_point_signed_integer_conversion/float_to_int_converter.fst"
+[dumpfile_mtime] "Fri Jan 27 22:27:29 2023"
+[dumpfile_size] 19499
+[savefile] "/home/marc/FPGA_Book_Solutions/floating_point_signed_integer_conversion/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
 [pos] -1 -1
-*-9.000000 2760 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
-[treeopen] int_float_converter_tb.
+*-21.000000 2760 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] float_to_int_converter_tb.
 [sst_width] 233
-[signals_width] 158
+[signals_width] 190
 [sst_expanded] 1
-[sst_vpaned_height] 289
+[sst_vpaned_height] 415
+@24
+float_to_int_converter_tb.UUT.exponent[3:0]
 @28
-int_float_converter_tb.UUT.exponent[3:0]
-int_float_converter_tb.UUT.float_o[12:0]
-int_float_converter_tb.UUT.int_i[7:0]
-int_float_converter_tb.UUT.sign
-int_float_converter_tb.UUT.significand[7:0]
+float_to_int_converter_tb.UUT.float_i[12:0]
 @29
-int_float_converter_tb.UUT.exponent[3:0]
-int_float_converter_tb.UUT.int_i[7:0]
+float_to_int_converter_tb.UUT.int_o[7:0]
+@28
+float_to_int_converter_tb.UUT.overflow
+float_to_int_converter_tb.UUT.sign
+float_to_int_converter_tb.UUT.significand[7:0]
+float_to_int_converter_tb.UUT.underflow
 [pattern_trace] 1
 [pattern_trace] 0

@@ -16,9 +16,9 @@ module int_to_float_converter(
             7'b1xxxx : exponent = 5;
             7'b1xxxxx : exponent = 6;
             7'b1xxxxxx : exponent = 7;
-            // default : exponent = 1;
+            default : exponent = 0;
         endcase
-        significand = {int_i[7:0] << (8 - exponent)};
+        significand = {int_i[6:0] << (7 - exponent), 1'b0};
 
         float_o = {sign, exponent, significand};
     end

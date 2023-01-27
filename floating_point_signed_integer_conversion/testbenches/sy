@@ -1,0 +1,28 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Thu Jan 26 18:09:47 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/floating_point_signed_integer_conversion/int_to_float_converter.fst"
+[dumpfile_mtime] "Thu Jan 26 18:09:37 2023"
+[dumpfile_size] 670
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/floating_point_signed_integer_conversion/testbenches/sy"
+[timestart] 351
+[size] 1846 1016
+[pos] -1 -1
+*-9.000000 2760 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] int_float_converter_tb.
+[sst_width] 233
+[signals_width] 158
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@28
+int_float_converter_tb.UUT.exponent[3:0]
+int_float_converter_tb.UUT.float_o[12:0]
+int_float_converter_tb.UUT.int_i[7:0]
+int_float_converter_tb.UUT.sign
+int_float_converter_tb.UUT.significand[7:0]
+@29
+int_float_converter_tb.UUT.exponent[3:0]
+int_float_converter_tb.UUT.int_i[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

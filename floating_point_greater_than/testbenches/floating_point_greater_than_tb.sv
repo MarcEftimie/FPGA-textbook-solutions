@@ -25,14 +25,12 @@ module floating_point_greater_than_tb;
             for (int j = 0; j < (2 ** 4); j++) begin
                 for (int k = 0; k < (2 ** 8); k++) begin
                     a = {i[0], j[3:0], k[7:0]};
-                    // $display("%b", k);
                     #1
                     $display("a : %b b : %b gt : %b", a, b, gt);
                     #1;
                 end
             end
         end
-
         $finish;
     end
 

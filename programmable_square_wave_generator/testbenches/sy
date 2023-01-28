@@ -1,0 +1,37 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sat Jan 28 02:07:33 2023
+[*]
+[dumpfile] "/home/marc/FPGA_Book_Solutions/programmable_square_wave_generator/programmable_square_wave_generator.fst"
+[dumpfile_mtime] "Sat Jan 28 02:07:23 2023"
+[dumpfile_size] 1103
+[savefile] "/home/marc/FPGA_Book_Solutions/programmable_square_wave_generator/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -1 -1
+*-16.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] programmable_square_wave_generator_tb.
+[sst_width] 233
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@22
+programmable_square_wave_generator_tb.UUT.clk_cycle_count_next[7:0]
+programmable_square_wave_generator_tb.UUT.clk_cycle_count_reg[7:0]
+@28
+programmable_square_wave_generator_tb.UUT.clk_i
+@22
+programmable_square_wave_generator_tb.UUT.off_duty_cycles_reg[3:0]
+programmable_square_wave_generator_tb.UUT.off_duty_i[3:0]
+programmable_square_wave_generator_tb.UUT.on_duty_cycles_reg[3:0]
+programmable_square_wave_generator_tb.UUT.on_duty_i[3:0]
+@28
+programmable_square_wave_generator_tb.UUT.on_next
+programmable_square_wave_generator_tb.UUT.on_reg
+programmable_square_wave_generator_tb.UUT.rst_i
+programmable_square_wave_generator_tb.UUT.square_wave_next
+programmable_square_wave_generator_tb.UUT.square_wave_reg
+@29
+programmable_square_wave_generator_tb.UUT.square_wave_o
+[pattern_trace] 1
+[pattern_trace] 0

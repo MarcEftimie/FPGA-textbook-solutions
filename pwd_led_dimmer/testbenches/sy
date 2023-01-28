@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sat Jan 28 02:27:24 2023
+[*]
+[dumpfile] "/home/marc/FPGA_Book_Solutions/pwd_led_dimmer/pwd_generator.fst"
+[dumpfile_mtime] "Sat Jan 28 02:27:22 2023"
+[dumpfile_size] 1047
+[savefile] "/home/marc/FPGA_Book_Solutions/pwd_led_dimmer/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -1 -1
+*-17.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] pwd_generator_tb.
+[sst_width] 233
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@28
+pwd_generator_tb.UUT.clk_i
+@22
+pwd_generator_tb.UUT.count_next[3:0]
+pwd_generator_tb.UUT.count_reg[3:0]
+pwd_generator_tb.UUT.duty_cycle_i[3:0]
+pwd_generator_tb.UUT.duty_cycle_reg[3:0]
+@28
+pwd_generator_tb.UUT.pwm_next
+pwd_generator_tb.UUT.pwm_o
+pwd_generator_tb.UUT.pwm_reg
+pwd_generator_tb.UUT.rst_i
+[pattern_trace] 1
+[pattern_trace] 0

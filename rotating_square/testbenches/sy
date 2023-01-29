@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sun Jan 29 02:13:25 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/rotating_square/time_multiplexer.fst"
+[dumpfile_mtime] "Sun Jan 29 02:13:20 2023"
+[dumpfile_size] 1529
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/rotating_square/testbenches/sy"
+[timestart] 833000
+[size] 2486 1376
+[pos] -1 -1
+*-18.000000 1055000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] time_multiplexer_tb.
+[sst_width] 233
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@28
+time_multiplexer_tb.UUT.an_o[3:0]
+time_multiplexer_tb.UUT.clk_i
+@22
+time_multiplexer_tb.UUT.count_next[7:0]
+time_multiplexer_tb.UUT.count_reg[7:0]
+@28
+time_multiplexer_tb.UUT.rst_i
+@23
+time_multiplexer_tb.UUT.sseg_o[6:0]
+[pattern_trace] 1
+[pattern_trace] 0

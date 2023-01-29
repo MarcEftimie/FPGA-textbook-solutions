@@ -8,7 +8,7 @@ module pwd_generator(
     output logic pwm_o
 );
 
-    // Declaration
+    // Declarations
     localparam COUNT_CEILING = 15;
     logic pwm_reg;
     logic pwm_next;

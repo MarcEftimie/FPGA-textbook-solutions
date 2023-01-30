@@ -2,8 +2,9 @@
 `default_nettype none
 
 module stopwatch #(
-    parameter N = 24
-    ) (
+    parameter TICK_NS = 24
+    )
+    (
     input wire clk_i,
     input wire rst_i,
     input wire start_i,
@@ -26,18 +27,26 @@ module stopwatch #(
     logic [3:0] in2;
     logic [3:0] in3;
 
-    logic [N-1:0] count_reg;
-    logic [N-1:0] count_next;
+    logic [$clog2(TICK_NS)-1:0] count_reg;
+    logic [$clog2(TICK_NS)-1:0] count_next;
 
     logic [3:0] sseg;
+    logic [3:0] hex;
 
     time_multiplexer TIME_MULTIPLEXER(
-        .*,
+        .clk_i(clk_i),
+        .rst_i(rst_i),
         .in0_i(in0),
         .in1_i(in1),
         .in2_i(in2),
         .in3_i(in3),
-        .sseg_o(sseg)
+        .an_o(an_o),
+        .hex_o(hex)
+    );
+
+    hex_to_7_segment HEX_TO_7_SEGMENT(
+        .hex_i(hex),
+        .sseg_o(sseg_o)
     );
 
     // Registers
@@ -57,25 +66,27 @@ module stopwatch #(
 
     // Next State Logic
     always_comb begin
-        if (count_reg < 10000000) begin
+        if (count_reg < TICK_NS) begin
             count_next = count_reg + 1;
         end else begin
             count_next = 0;
-            milliseconds_next = milliseconds_reg + 1;
             if (milliseconds_reg < 9) begin
                 milliseconds_next = milliseconds_reg + 1;
             end else begin
                 milliseconds_next = 0;
-                seconds_next = seconds_reg + 1;
-                if (seconds_reg < 59) begin
-                    seconds_next = seconds_reg + 1;
+                if (seconds_reg[3:0] < 9) begin
+                    seconds_next[3:0] = seconds_reg[3:0] + 1;
                 end else begin
-                    seconds_next = 0;
-                    minutes_next = minutes_reg + 1;
-                    if (minutes_reg < 9) begin
-                        minutes_next = minutes_reg + 1;
+                    seconds_next[3:0] = 0;
+                    if (seconds_reg[7:4] < 5) begin
+                        seconds_next[7:4] = seconds_reg[7:4] + 1;
                     end else begin
-                        minutes_next = 0;
+                        seconds_next[7:4] = 0;
+                        if (minutes_reg < 9) begin
+                            minutes_next = minutes_reg + 1;
+                        end else begin
+                            minutes_next = 0;
+                        end
                     end
                 end
             end
@@ -83,8 +94,8 @@ module stopwatch #(
     end
 
     assign in0 = milliseconds_reg;
-    assign in1 = seconds[3:0];
-    assign in2 = seconds[7:4];
+    assign in1 = seconds_reg[3:0];
+    assign in2 = seconds_reg[7:4];
     assign in3 = minutes_reg;
 
 endmodule

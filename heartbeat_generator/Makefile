@@ -9,9 +9,6 @@ SRCS=hdl/time_multiplexer.sv hdl/rotating_square_generator.sv
 # Look up .PHONY rules for Makefiles
 .PHONY: clean submission remove_solutions
 
-test_time_multiplexer : testbenches/time_multiplexer_tb.sv ${SRCS}
-	${IVERILOG} $^ -o time_multiplexer_tb.bin && ${VVP} time_multiplexer_tb.bin ${VVP_POST} && gtkwave time_multiplexer.fst -a testbenches/sy
-
 test_rotating_square_generator : testbenches/rotating_square_generator_tb.sv ${SRCS}
 	${IVERILOG} $^ -o rotating_square_generator_tb.bin && ${VVP} rotating_square_generator_tb.bin ${VVP_POST} && gtkwave rotating_square_generator.fst -a testbenches/sy
 

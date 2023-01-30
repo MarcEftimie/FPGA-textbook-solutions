@@ -4,7 +4,7 @@ IVERILOG=iverilog -DSIMULATION -Wall -Wno-sensitivity-entire-vector -Wno-sensiti
 VVP=vvp
 VVP_POST=-fst
 VIVADO=vivado -mode batch -source
-SRCS=hdl/time_multiplexer.sv hdl/stopwatch.sv
+SRCS=hdl/stopwatch.sv hdl/time_multiplexer.sv hdl/hex_to_7_segment.sv
 
 # Look up .PHONY rules for Makefiles
 .PHONY: clean submission remove_solutions

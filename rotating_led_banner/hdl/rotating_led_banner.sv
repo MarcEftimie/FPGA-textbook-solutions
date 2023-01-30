@@ -29,7 +29,7 @@ module rotating_led_banner #(
     logic [N-1:0] count_reg;
     logic [N-1:0] count_next;
 
-    logic [3:0] sseg;
+    logic [3:0] hex;
 
     time_multiplexer TIME_MULTIPLEXER(
         .*,
@@ -37,7 +37,12 @@ module rotating_led_banner #(
         .in1_i(in1_reg),
         .in2_i(in2_reg),
         .in3_i(in3_reg),
-        .sseg_o(sseg)
+        .hex_o(hex)
+    );
+
+    hex_to_7_segment HEX_TO_7_SEGMENT(
+        .hex_i(hex),
+        .sseg_o(sseg_o)
     );
 
     parameterized_barrel_shifter #(
@@ -81,21 +86,6 @@ module rotating_led_banner #(
             data_next = shifted_data;
             count_next = 0;
         end
-    end
-
-    always_comb begin
-        case(sseg)
-            4'h0 : sseg_o = 7'b1000000;
-            4'h1 : sseg_o = 7'b1111001;
-            4'h2 : sseg_o = 7'b0100100;
-            4'h3 : sseg_o = 7'b0110000;
-            4'h4 : sseg_o = 7'b0011001;
-            4'h5 : sseg_o = 7'b0010010;
-            4'h6 : sseg_o = 7'b0000010;
-            4'h7 : sseg_o = 7'b1111000;
-            4'h8 : sseg_o = 7'b0000000;
-            4'h9 : sseg_o = 7'b0010000;
-        endcase
     end
 
     // Output Logic

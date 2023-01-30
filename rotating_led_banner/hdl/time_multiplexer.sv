@@ -8,7 +8,7 @@ module time_multiplexer #(
     input wire rst_i,
     input wire [3:0] in0_i, in1_i, in2_i, in3_i,
     output logic [3:0] an_o,
-    output logic [3:0] sseg_o
+    output logic [3:0] hex_o
 );
 
     // Declarations
@@ -31,19 +31,19 @@ module time_multiplexer #(
         case(count_reg[N-1:N-2])
             2'b00 : begin
                 an_o = 4'b1110;
-                sseg_o = in0_i;
+                hex_o = in0_i;
             end
             2'b01 : begin
                 an_o = 4'b1101;
-                sseg_o = in1_i;
+                hex_o = in1_i;
             end
             2'b10 : begin
                 an_o = 4'b1011;
-                sseg_o = in2_i;
+                hex_o = in2_i;
             end
             default : begin
                 an_o = 4'b0111;
-                sseg_o = in3_i;
+                hex_o = in3_i;
             end
         endcase
     end

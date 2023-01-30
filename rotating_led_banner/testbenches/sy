@@ -1,0 +1,53 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Jan 30 05:08:37 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/rotating_led_banner/rotating_led_banner.fst"
+[dumpfile_mtime] "Mon Jan 30 05:07:02 2023"
+[dumpfile_size] 2712490
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/rotating_led_banner/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -1 -1
+*-22.000000 2510000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] rotating_led_banner_tb.
+[treeopen] rotating_led_banner_tb.UUT.
+[sst_width] 233
+[signals_width] 228
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@22
+rotating_led_banner_tb.UUT.an_o[3:0]
+@28
+rotating_led_banner_tb.UUT.clk_i
+@22
+rotating_led_banner_tb.UUT.count_next[11:0]
+rotating_led_banner_tb.UUT.count_reg[11:0]
+@29
+rotating_led_banner_tb.UUT.data_next[39:0]
+rotating_led_banner_tb.UUT.data_reg[39:0]
+@28
+rotating_led_banner_tb.UUT.dp_o
+@22
+rotating_led_banner_tb.UUT.in0_next[3:0]
+rotating_led_banner_tb.UUT.in0_reg[3:0]
+rotating_led_banner_tb.UUT.in1_next[3:0]
+rotating_led_banner_tb.UUT.in1_reg[3:0]
+rotating_led_banner_tb.UUT.in2_next[3:0]
+rotating_led_banner_tb.UUT.in2_reg[3:0]
+rotating_led_banner_tb.UUT.in3_next[3:0]
+rotating_led_banner_tb.UUT.in3_reg[3:0]
+@28
+rotating_led_banner_tb.UUT.rst_i
+@22
+rotating_led_banner_tb.UUT.shifted_data[39:0]
+rotating_led_banner_tb.UUT.sseg_o[6:0]
+rotating_led_banner_tb.UUT.BARREL_SHIFTER.data_i[39:0]
+@24
+rotating_led_banner_tb.UUT.BARREL_SHIFTER.shift_amount_i[6:0]
+@28
+rotating_led_banner_tb.UUT.BARREL_SHIFTER.shift_direction_i
+@22
+rotating_led_banner_tb.UUT.BARREL_SHIFTER.shifted_data_o[39:0]
+[pattern_trace] 1
+[pattern_trace] 0

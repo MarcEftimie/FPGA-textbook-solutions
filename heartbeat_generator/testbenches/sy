@@ -1,0 +1,50 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Jan 30 01:55:25 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/rotating_square/rotating_square_generator.fst"
+[dumpfile_mtime] "Mon Jan 30 01:54:44 2023"
+[dumpfile_size] 2736146
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/rotating_square/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -1 -1
+*-21.000000 5190000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] rotating_square_generator_tb.
+[treeopen] rotating_square_generator_tb.UUT.
+[sst_width] 233
+[signals_width] 228
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@28
+rotating_square_generator_tb.UUT.an_o[3:0]
+rotating_square_generator_tb.UUT.clk_i
+rotating_square_generator_tb.UUT.in0_next[6:0]
+rotating_square_generator_tb.UUT.in0_reg[6:0]
+rotating_square_generator_tb.UUT.in1_next[6:0]
+rotating_square_generator_tb.UUT.in1_reg[6:0]
+rotating_square_generator_tb.UUT.in2_next[6:0]
+rotating_square_generator_tb.UUT.in2_reg[6:0]
+rotating_square_generator_tb.UUT.in3_next[6:0]
+rotating_square_generator_tb.UUT.in3_reg[6:0]
+rotating_square_generator_tb.UUT.rst_i
+rotating_square_generator_tb.UUT.sseg_o[6:0]
+rotating_square_generator_tb.UUT.count_next[11:0]
+rotating_square_generator_tb.UUT.count_reg[11:0]
+@23
+rotating_square_generator_tb.UUT.TIME_MULTIPLEXER.an_o[3:0]
+@29
+rotating_square_generator_tb.UUT.TIME_MULTIPLEXER.clk_i
+@23
+rotating_square_generator_tb.UUT.TIME_MULTIPLEXER.count_next[17:0]
+rotating_square_generator_tb.UUT.TIME_MULTIPLEXER.count_reg[17:0]
+rotating_square_generator_tb.UUT.TIME_MULTIPLEXER.in0_i[6:0]
+rotating_square_generator_tb.UUT.TIME_MULTIPLEXER.in1_i[6:0]
+rotating_square_generator_tb.UUT.TIME_MULTIPLEXER.in2_i[6:0]
+rotating_square_generator_tb.UUT.TIME_MULTIPLEXER.in3_i[6:0]
+@29
+rotating_square_generator_tb.UUT.TIME_MULTIPLEXER.rst_i
+@23
+rotating_square_generator_tb.UUT.TIME_MULTIPLEXER.sseg_o[6:0]
+[pattern_trace] 1
+[pattern_trace] 0

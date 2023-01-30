@@ -1,10 +1,10 @@
 `timescale 1ns/1ps
 `default_nettype none
 
-module rotating_square_generator #(
-    parameter N = 26,
-    parameter TOP_SQUARE = 7'b0011100,
-    parameter BOTTOM_SQUARE = 7'b0100011
+module heartbeat_generator #(
+    parameter N = 27,
+    parameter LEFT_LINE = 7'b1001111,
+    parameter RIGHT_LINE = 7'b1111001
     )(
     input wire clk_i,
     input wire rst_i,
@@ -56,17 +56,19 @@ module rotating_square_generator #(
         in1_next = 7'b1111111;
         in2_next = 7'b1111111;
         in3_next = 7'b1111111;
-        case(count_reg[N-1:N-3])
-            3'b000 : in3_next = TOP_SQUARE;  
-            3'b001 : in2_next = TOP_SQUARE;  
-            3'b010 : in1_next = TOP_SQUARE;  
-            3'b011 : in0_next = TOP_SQUARE;  
-            3'b100 : in0_next = BOTTOM_SQUARE;  
-            3'b101 : in1_next = BOTTOM_SQUARE;  
-            3'b110 : in2_next = BOTTOM_SQUARE;  
-            3'b111 : in3_next = BOTTOM_SQUARE;  
-        endcase
         count_next = count_reg + 1;
+        if (count_reg < 27777777) begin
+            in2_next = RIGHT_LINE;
+            in1_next = LEFT_LINE;
+        end else if (count_reg < 55555554) begin
+            in2_next = LEFT_LINE;
+            in1_next = RIGHT_LINE;
+        end else if (count_reg < 83333331)begin
+            in3_next = LEFT_LINE;
+            in0_next = RIGHT_LINE;
+        end else begin
+            count_next = 0;
+        end
     end
 
 endmodule

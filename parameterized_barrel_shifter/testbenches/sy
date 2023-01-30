@@ -1,18 +1,18 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Wed Jan 25 20:29:25 2023
+[*] Mon Jan 30 05:37:39 2023
 [*]
-[dumpfile] "/home/marc/FPGA_Book_Solutions/parameterized_barrel_shifter/parameterized_barrel_shifter.fst"
-[dumpfile_mtime] "Wed Jan 25 20:29:03 2023"
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/parameterized_barrel_shifter/parameterized_barrel_shifter.fst"
+[dumpfile_mtime] "Mon Jan 30 05:37:24 2023"
 [dumpfile_size] 713
-[savefile] "/home/marc/FPGA_Book_Solutions/parameterized_barrel_shifter/testbenches/sy"
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/parameterized_barrel_shifter/testbenches/sy"
 [timestart] 0
 [size] 1846 1016
 [pos] -1 -1
-*-13.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-12.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] parameterized_barrel_shifter_tb.
 [sst_width] 233
-[signals_width] 182
+[signals_width] 190
 [sst_expanded] 1
 [sst_vpaned_height] 289
 @29

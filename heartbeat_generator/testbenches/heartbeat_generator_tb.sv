@@ -9,6 +9,7 @@ module heartbeat_generator_tb;
     logic rst_i;
     wire [3:0] an_o;
     wire [6:0] sseg_o;
+    wire dp_o;
 
     heartbeat_generator #(
         .N(N)

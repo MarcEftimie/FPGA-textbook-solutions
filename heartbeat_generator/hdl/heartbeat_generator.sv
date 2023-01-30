@@ -9,7 +9,8 @@ module heartbeat_generator #(
     input wire clk_i,
     input wire rst_i,
     output logic [3:0] an_o,
-    output logic [6:0] sseg_o
+    output logic [6:0] sseg_o,
+    output logic dp_o
 );
 
     // Declarations
@@ -24,6 +25,8 @@ module heartbeat_generator #(
 
     logic [N-1:0] count_reg;
     logic [N-1:0] count_next;
+
+    assign dp_o = 1;
 
     time_multiplexer TIME_MULTIPLEXER(
         .*,

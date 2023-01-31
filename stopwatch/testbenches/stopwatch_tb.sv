@@ -4,7 +4,7 @@
 module stopwatch_tb;
 
     localparam CLK_PERIOD_NS = 10;
-    localparam TICK_NS = 10; //10000000
+    localparam TICK_NS = 10000000; //10000000
     logic clk_i;
     logic rst_i;
     logic start_i;
@@ -29,7 +29,7 @@ module stopwatch_tb;
         repeat(4) @(negedge clk_i);
         rst_i = 0;
         repeat(4) @(negedge clk_i);
-        for (int i=0; i < 2 ** TICK_NS; i++) begin
+        for (int i=0; i < 2 ** 10; i++) begin
             repeat(50) @(negedge clk_i);
         end
         $finish;

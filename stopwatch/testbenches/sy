@@ -1,47 +1,31 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Mon Jan 30 20:46:51 2023
+[*] Tue Jan 31 06:10:57 2023
 [*]
-[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/stopwatch/stopwatch.fst"
-[dumpfile_mtime] "Mon Jan 30 20:46:24 2023"
-[dumpfile_size] 174500
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/stopwatch/debouncer.fst"
+[dumpfile_mtime] "Tue Jan 31 06:10:50 2023"
+[dumpfile_size] 9612
 [savefile] "/home/marc/projects/FPGA_Book_Solutions/stopwatch/testbenches/sy"
 [timestart] 0
-[size] 1846 1016
-[pos] -51 -51
-*-21.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
-[treeopen] stopwatch_tb.
+[size] 2486 1376
+[pos] -89 -89
+*-23.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] debouncer_tb.
 [sst_width] 233
 [signals_width] 287
 [sst_expanded] 1
-[sst_vpaned_height] 289
+[sst_vpaned_height] 415
+@28
+debouncer_tb.UUT.btn_i
+debouncer_tb.UUT.clk_i
 @22
-stopwatch_tb.UUT.an_o[3:0]
+debouncer_tb.UUT.count_next[9:0]
+debouncer_tb.UUT.count_reg[9:0]
 @28
-stopwatch_tb.UUT.clk_i
-@25
-stopwatch_tb.UUT.count_next[9:0]
-stopwatch_tb.UUT.count_reg[9:0]
-@28
-stopwatch_tb.UUT.dp_o
-@22
-stopwatch_tb.UUT.hex[3:0]
-stopwatch_tb.UUT.in0[3:0]
-stopwatch_tb.UUT.in1[3:0]
-stopwatch_tb.UUT.in2[3:0]
-stopwatch_tb.UUT.in3[3:0]
-stopwatch_tb.UUT.milliseconds_next[3:0]
-stopwatch_tb.UUT.milliseconds_reg[3:0]
-stopwatch_tb.UUT.minutes_next[3:0]
-stopwatch_tb.UUT.minutes_reg[3:0]
-@28
-stopwatch_tb.UUT.rst_i
-@22
-stopwatch_tb.UUT.seconds_next[7:0]
-stopwatch_tb.UUT.seconds_reg[7:0]
-stopwatch_tb.UUT.sseg_o[6:0]
-@28
-stopwatch_tb.UUT.start_i
-stopwatch_tb.UUT.stop_i
+debouncer_tb.UUT.pulse_next
+debouncer_tb.UUT.pulse_o
+debouncer_tb.UUT.pulse_reg
+debouncer_tb.UUT.state_next[1:0]
+debouncer_tb.UUT.state_reg[1:0]
 [pattern_trace] 1
 [pattern_trace] 0

@@ -2,7 +2,7 @@
 `default_nettype none
 
 module hex_to_7_segment (
-    input logic [3:0] hex_i,
+    input wire [3:0] hex_i,
     output logic [6:0] sseg_o
 );
 

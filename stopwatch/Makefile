@@ -4,13 +4,16 @@ IVERILOG=iverilog -DSIMULATION -Wall -Wno-sensitivity-entire-vector -Wno-sensiti
 VVP=vvp
 VVP_POST=-fst
 VIVADO=vivado -mode batch -source
-SRCS=hdl/stopwatch.sv hdl/time_multiplexer.sv hdl/hex_to_7_segment.sv
+SRCS=hdl/stopwatch.sv hdl/time_multiplexer.sv hdl/hex_to_7_segment.sv hdl/debouncer.sv
 
 # Look up .PHONY rules for Makefiles
 .PHONY: clean submission remove_solutions
 
 test_stopwatch : testbenches/stopwatch_tb.sv ${SRCS}
 	${IVERILOG} $^ -o stopwatch_tb.bin && ${VVP} stopwatch_tb.bin ${VVP_POST} && gtkwave stopwatch.fst -a testbenches/sy
+
+test_debouncer : testbenches/debouncer_tb.sv ${SRCS}
+	${IVERILOG} $^ -o debouncer_tb.bin && ${VVP} debouncer_tb.bin ${VVP_POST} && gtkwave debouncer.fst -a testbenches/sy
 
 # Call this to clean up all your generated files
 clean:

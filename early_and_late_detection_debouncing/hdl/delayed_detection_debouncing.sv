@@ -71,13 +71,14 @@ module delayed_detection_debouncing #(
             FALL : begin
                 if (count_reg < DELAY_NS & ~btn_i) begin
                     count_next = count_reg + 1;
+                    debounced_next = 1;
                     state_next = FALL;
                 end else begin
                     if (~btn_i) begin
                     debounced_next = 0;
-                    state_next = WAIT;
+                    state_next = IDLE;
                     end else begin
-                        state_next = IDLE;
+                        state_next = WAIT;
                     end
                 end
             end
@@ -88,6 +89,6 @@ module delayed_detection_debouncing #(
     end
 
     // Output Logic
-    assign debounced_o = debounced_reg;
+    assign debounced_o = debounced_next;
 
 endmodule

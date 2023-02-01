@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Wed Feb  1 23:13:11 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/early_and_late_detection_debouncing/delayed_detection_debouncing.fst"
+[dumpfile_mtime] "Wed Feb  1 23:13:04 2023"
+[dumpfile_size] 1395
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/early_and_late_detection_debouncing/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -39 -39
+*-16.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] delayed_detection_debouncing_tb.
+[sst_width] 233
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@28
+delayed_detection_debouncing_tb.UUT.btn_i
+delayed_detection_debouncing_tb.UUT.clk_i
+@22
+delayed_detection_debouncing_tb.UUT.count_next[3:0]
+delayed_detection_debouncing_tb.UUT.count_reg[3:0]
+@28
+delayed_detection_debouncing_tb.UUT.debounced_next
+delayed_detection_debouncing_tb.UUT.debounced_o
+delayed_detection_debouncing_tb.UUT.debounced_reg
+delayed_detection_debouncing_tb.UUT.state_next[1:0]
+delayed_detection_debouncing_tb.UUT.state_reg[1:0]
+[pattern_trace] 1
+[pattern_trace] 0

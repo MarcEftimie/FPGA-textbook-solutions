@@ -74,6 +74,6 @@ module early_detection_debouncing #(
     end
 
     // Output Logic
-    assign debounced_o = debounced_reg;
+    assign debounced_o = debounced_next;
 
 endmodule

@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Wed Feb  1 01:58:01 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/dual_edge_detector/dual_edge_detector_moore.fst"
+[dumpfile_mtime] "Wed Feb  1 01:57:54 2023"
+[dumpfile_size] 664
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/dual_edge_detector/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -39 -39
+*-15.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] dual_edge_detector_moore_tb.
+[sst_width] 233
+[signals_width] 110
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@28
+dual_edge_detector_moore_tb.UUT.clk_i
+dual_edge_detector_moore_tb.UUT.pulse_o
+dual_edge_detector_moore_tb.UUT.signal_i
+dual_edge_detector_moore_tb.UUT.state_next
+dual_edge_detector_moore_tb.UUT.state_reg
+[pattern_trace] 1
+[pattern_trace] 0

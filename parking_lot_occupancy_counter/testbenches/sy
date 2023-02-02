@@ -1,0 +1,51 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Thu Feb  2 01:24:56 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/parking_lot_occupancy_counter/parking_lot_occupancy_counter.fst"
+[dumpfile_mtime] "Thu Feb  2 01:23:49 2023"
+[dumpfile_size] 4583
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/parking_lot_occupancy_counter/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -1 -1
+*-13.000000 5000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] parking_lot_occupancy_counter_tb.
+[sst_width] 233
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@22
+parking_lot_occupancy_counter_tb.UUT.an_o[3:0]
+parking_lot_occupancy_counter_tb.UUT.car_count_next[11:0]
+parking_lot_occupancy_counter_tb.UUT.car_count_reg[11:0]
+@28
+parking_lot_occupancy_counter_tb.UUT.clk_i
+@c00029
+parking_lot_occupancy_counter_tb.UUT.hex[3:0]
+@28
+(0)parking_lot_occupancy_counter_tb.UUT.hex[3:0]
+(1)parking_lot_occupancy_counter_tb.UUT.hex[3:0]
+(2)parking_lot_occupancy_counter_tb.UUT.hex[3:0]
+(3)parking_lot_occupancy_counter_tb.UUT.hex[3:0]
+@1401209
+-group_end
+@22
+parking_lot_occupancy_counter_tb.UUT.in0[3:0]
+parking_lot_occupancy_counter_tb.UUT.in1[3:0]
+parking_lot_occupancy_counter_tb.UUT.in2[3:0]
+parking_lot_occupancy_counter_tb.UUT.in3[3:0]
+@28
+parking_lot_occupancy_counter_tb.UUT.reset_i
+parking_lot_occupancy_counter_tb.UUT.sensor_a_i
+parking_lot_occupancy_counter_tb.UUT.sensor_a_next
+parking_lot_occupancy_counter_tb.UUT.sensor_a_reg
+parking_lot_occupancy_counter_tb.UUT.sensor_b_i
+parking_lot_occupancy_counter_tb.UUT.sensor_b_next
+parking_lot_occupancy_counter_tb.UUT.sensor_b_reg
+@22
+parking_lot_occupancy_counter_tb.UUT.seven_segment_o[6:0]
+parking_lot_occupancy_counter_tb.UUT.state_next[3:0]
+parking_lot_occupancy_counter_tb.UUT.state_reg[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

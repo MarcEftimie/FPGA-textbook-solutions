@@ -1,22 +1,40 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Sat Feb  4 03:06:10 2023
+[*] Sat Feb  4 20:07:32 2023
 [*]
 [dumpfile] "/home/marc/projects/FPGA_Book_Solutions/BCD_to_binary_converter/BCD_to_binary_converter.fst"
-[dumpfile_mtime] "Sat Feb  4 03:05:59 2023"
-[dumpfile_size] 629
+[dumpfile_mtime] "Sat Feb  4 20:07:26 2023"
+[dumpfile_size] 1176
 [savefile] "/home/marc/projects/FPGA_Book_Solutions/BCD_to_binary_converter/testbenches/sy"
 [timestart] 0
 [size] 2486 1376
-[pos] -39 -39
-*-17.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] -1 -1
+*-14.000000 178500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] BCD_to_binary_converter_tb.
 [sst_width] 233
-[signals_width] 142
+[signals_width] 182
 [sst_expanded] 1
 [sst_vpaned_height] 414
+@22
+BCD_to_binary_converter_tb.UUT.BCD_i[12:0]
 @29
-BCD_to_binary_converter_tb.UUT.BCD_i[39:0]
+BCD_to_binary_converter_tb.UUT.BCD_next[12:0]
+BCD_to_binary_converter_tb.UUT.BCD_reg[12:0]
+@28
+BCD_to_binary_converter_tb.UUT.BCD_tmp[12:0]
+BCD_to_binary_converter_tb.UUT.binary_next[31:0]
 BCD_to_binary_converter_tb.UUT.binary_o[31:0]
+BCD_to_binary_converter_tb.UUT.binary_reg[31:0]
+@24
+BCD_to_binary_converter_tb.UUT.bit_count_next[4:0]
+BCD_to_binary_converter_tb.UUT.bit_count_reg[4:0]
+@28
+BCD_to_binary_converter_tb.UUT.clk_i
+BCD_to_binary_converter_tb.UUT.done_o
+BCD_to_binary_converter_tb.UUT.ready_o
+BCD_to_binary_converter_tb.UUT.reset_i
+BCD_to_binary_converter_tb.UUT.start_i
+BCD_to_binary_converter_tb.UUT.state_next[1:0]
+BCD_to_binary_converter_tb.UUT.state_reg[1:0]
 [pattern_trace] 1
 [pattern_trace] 0

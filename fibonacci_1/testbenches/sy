@@ -1,0 +1,114 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sat Feb  4 20:17:41 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/fibonacci_1/fibonacci_top.fst"
+[dumpfile_mtime] "Sat Feb  4 20:17:36 2023"
+[dumpfile_size] 5265
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/fibonacci_1/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] 147 53
+*-19.000000 1800000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] fibonacci_top_tb.
+[treeopen] fibonacci_top_tb.UUT.
+[sst_width] 233
+[signals_width] 312
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@22
+fibonacci_top_tb.UUT.an_o[3:0]
+@28
+fibonacci_top_tb.UUT.clk_i
+fibonacci_top_tb.UUT.done_bin_to_bcd
+fibonacci_top_tb.UUT.done_fib
+fibonacci_top_tb.UUT.dp_o
+@22
+fibonacci_top_tb.UUT.fibonacci_num_BCD[15:0]
+fibonacci_top_tb.UUT.fibonacci_num_BCD_next[15:0]
+@24
+fibonacci_top_tb.UUT.fibonacci_num_BCD_reg[15:0]
+@22
+fibonacci_top_tb.UUT.fibonacci_num_bin[13:0]
+fibonacci_top_tb.UUT.fibonacci_num_bin_next[13:0]
+fibonacci_top_tb.UUT.fibonacci_num_bin_reg[13:0]
+fibonacci_top_tb.UUT.hex[3:0]
+@28
+fibonacci_top_tb.UUT.iterations_bcd_i[7:0]
+fibonacci_top_tb.UUT.iterations_bin[6:0]
+fibonacci_top_tb.UUT.iterations_bin_next[6:0]
+fibonacci_top_tb.UUT.iterations_bin_reg[6:0]
+fibonacci_top_tb.UUT.overflow
+fibonacci_top_tb.UUT.overflow_next
+fibonacci_top_tb.UUT.overflow_reg
+fibonacci_top_tb.UUT.reset_i
+fibonacci_top_tb.UUT.seven_segment_o[6:0]
+fibonacci_top_tb.UUT.start
+fibonacci_top_tb.UUT.start_bin_to_bcd
+fibonacci_top_tb.UUT.start_fib
+fibonacci_top_tb.UUT.start_i
+fibonacci_top_tb.UUT.state_next[1:0]
+fibonacci_top_tb.UUT.state_reg[1:0]
+@200
+-BCD_TO_BIN
+@22
+fibonacci_top_tb.UUT.BCD_TO_BIN.BCD_i[7:0]
+fibonacci_top_tb.UUT.BCD_TO_BIN.BCD_next[7:0]
+fibonacci_top_tb.UUT.BCD_TO_BIN.BCD_reg[7:0]
+fibonacci_top_tb.UUT.BCD_TO_BIN.BCD_tmp[7:0]
+@28
+fibonacci_top_tb.UUT.BCD_TO_BIN.binary_next[31:0]
+fibonacci_top_tb.UUT.BCD_TO_BIN.binary_o[31:0]
+fibonacci_top_tb.UUT.BCD_TO_BIN.binary_reg[31:0]
+fibonacci_top_tb.UUT.BCD_TO_BIN.clk_i
+fibonacci_top_tb.UUT.BCD_TO_BIN.done_o
+fibonacci_top_tb.UUT.BCD_TO_BIN.ready_o
+fibonacci_top_tb.UUT.BCD_TO_BIN.reset_i
+fibonacci_top_tb.UUT.BCD_TO_BIN.start_i
+fibonacci_top_tb.UUT.BCD_TO_BIN.state_next[1:0]
+fibonacci_top_tb.UUT.BCD_TO_BIN.state_reg[1:0]
+@200
+-BIN_TO_BCD
+@22
+fibonacci_top_tb.UUT.BIN_TO_BCD.BCD_next[15:0]
+fibonacci_top_tb.UUT.BIN_TO_BCD.BCD_o[15:0]
+fibonacci_top_tb.UUT.BIN_TO_BCD.BCD_reg[15:0]
+fibonacci_top_tb.UUT.BIN_TO_BCD.BCD_tmp[15:0]
+fibonacci_top_tb.UUT.BIN_TO_BCD.binary_i[13:0]
+fibonacci_top_tb.UUT.BIN_TO_BCD.binary_next[13:0]
+fibonacci_top_tb.UUT.BIN_TO_BCD.binary_reg[13:0]
+fibonacci_top_tb.UUT.BIN_TO_BCD.bit_count_next[4:0]
+fibonacci_top_tb.UUT.BIN_TO_BCD.bit_count_reg[4:0]
+@28
+fibonacci_top_tb.UUT.BIN_TO_BCD.clk_i
+fibonacci_top_tb.UUT.BIN_TO_BCD.done_o
+fibonacci_top_tb.UUT.BIN_TO_BCD.ready_o
+fibonacci_top_tb.UUT.BIN_TO_BCD.reset_i
+fibonacci_top_tb.UUT.BIN_TO_BCD.start_i
+fibonacci_top_tb.UUT.BIN_TO_BCD.state_next[1:0]
+fibonacci_top_tb.UUT.BIN_TO_BCD.state_reg[1:0]
+@200
+-FIB_GENERATOR
+@28
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.clk_i
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.done_o
+@22
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.fib1_next[13:0]
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.fib1_reg[13:0]
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.fib2_next[13:0]
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.fib2_reg[13:0]
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.fibonacci_o[13:0]
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.iteration_next[6:0]
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.iteration_reg[6:0]
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.iterations_i[6:0]
+@28
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.overflow_next
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.overflow_o
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.overflow_reg
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.ready_o
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.reset_i
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.start_i
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.state_next[1:0]
+fibonacci_top_tb.UUT.FIBONACCI_GENERATOR.state_reg[1:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -22,7 +22,7 @@ module BCD_to_binary_converter #(
 
     logic [N-1:0] BCD_reg, BCD_next, BCD_tmp;
     logic [31:0] binary_reg, binary_next, binary_tmp;
-    logic [$clog2(N):0] bit_count_reg, bit_count_next;
+    logic [31:0] bit_count_reg, bit_count_next;
 
     // Registers
     always_ff @(posedge clk_i, posedge reset_i) begin

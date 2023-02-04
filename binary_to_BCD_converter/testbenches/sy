@@ -1,28 +1,32 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Thu Feb  2 20:27:17 2023
+[*] Sat Feb  4 19:05:51 2023
 [*]
 [dumpfile] "/home/marc/projects/FPGA_Book_Solutions/binary_to_BCD_converter/binary_to_BCD_converter.fst"
-[dumpfile_mtime] "Thu Feb  2 20:27:06 2023"
-[dumpfile_size] 1226
+[dumpfile_mtime] "Sat Feb  4 19:05:27 2023"
+[dumpfile_size] 1040
 [savefile] "/home/marc/projects/FPGA_Book_Solutions/binary_to_BCD_converter/testbenches/sy"
 [timestart] 0
-[size] 1846 1016
-[pos] -1 -1
-*-17.000000 125000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[size] 2486 1376
+[pos] 111 64
+*-15.000000 44300 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] binary_to_BCD_converter_tb.
 [sst_width] 233
 [signals_width] 491
 [sst_expanded] 1
-[sst_vpaned_height] 289
+[sst_vpaned_height] 415
+@29
+binary_to_BCD_converter_tb.UUT.BCD_next[15:0]
+binary_to_BCD_converter_tb.UUT.BCD_o[15:0]
+binary_to_BCD_converter_tb.UUT.BCD_reg[15:0]
+binary_to_BCD_converter_tb.UUT.BCD_tmp[15:0]
+binary_to_BCD_converter_tb.UUT.binary_i[13:0]
+@22
+binary_to_BCD_converter_tb.UUT.binary_next[13:0]
+binary_to_BCD_converter_tb.UUT.binary_reg[13:0]
+binary_to_BCD_converter_tb.UUT.bit_count_next[4:0]
+binary_to_BCD_converter_tb.UUT.bit_count_reg[4:0]
 @28
-binary_to_BCD_converter_tb.UUT.BCD_next[39:0]
-binary_to_BCD_converter_tb.UUT.BCD_o[39:0]
-binary_to_BCD_converter_tb.UUT.BCD_reg[39:0]
-binary_to_BCD_converter_tb.UUT.BCD_tmp[39:0]
-binary_to_BCD_converter_tb.UUT.binary_i[31:0]
-binary_to_BCD_converter_tb.UUT.binary_next[31:0]
-binary_to_BCD_converter_tb.UUT.binary_reg[31:0]
 binary_to_BCD_converter_tb.UUT.clk_i
 binary_to_BCD_converter_tb.UUT.done_o
 binary_to_BCD_converter_tb.UUT.ready_o
@@ -30,8 +34,5 @@ binary_to_BCD_converter_tb.UUT.reset_i
 binary_to_BCD_converter_tb.UUT.start_i
 binary_to_BCD_converter_tb.UUT.state_next[1:0]
 binary_to_BCD_converter_tb.UUT.state_reg[1:0]
-@25
-binary_to_BCD_converter_tb.UUT.bit_count_next[5:0]
-binary_to_BCD_converter_tb.UUT.bit_count_reg[5:0]
 [pattern_trace] 1
 [pattern_trace] 0

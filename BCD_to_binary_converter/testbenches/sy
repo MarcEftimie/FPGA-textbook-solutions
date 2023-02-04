@@ -1,0 +1,22 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sat Feb  4 03:06:10 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/BCD_to_binary_converter/BCD_to_binary_converter.fst"
+[dumpfile_mtime] "Sat Feb  4 03:05:59 2023"
+[dumpfile_size] 629
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/BCD_to_binary_converter/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -39 -39
+*-17.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BCD_to_binary_converter_tb.
+[sst_width] 233
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@29
+BCD_to_binary_converter_tb.UUT.BCD_i[39:0]
+BCD_to_binary_converter_tb.UUT.binary_o[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

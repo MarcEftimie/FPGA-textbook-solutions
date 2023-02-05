@@ -1,0 +1,55 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sun Feb  5 06:11:12 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/fibonacci_2/fibonacci.fst"
+[dumpfile_mtime] "Sun Feb  5 06:11:03 2023"
+[dumpfile_size] 2599
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/fibonacci_2/testbenches/sy"
+[timestart] 376800
+[size] 2486 1376
+[pos] -1 -1
+*-16.312143 731900 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] fibonacci_tb.
+[treeopen] fibonacci_tb.UUT.
+[sst_width] 233
+[signals_width] 336
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@28
+fibonacci_tb.UUT.BCD_next[15:0]
+fibonacci_tb.UUT.BCD_reg[15:0]
+@22
+fibonacci_tb.UUT.BCD_tmp[15:0]
+fibonacci_tb.UUT.an_o[3:0]
+fibonacci_tb.UUT.binary_next[31:0]
+fibonacci_tb.UUT.binary_reg[31:0]
+fibonacci_tb.UUT.bit_count_next[15:0]
+fibonacci_tb.UUT.bit_count_reg[15:0]
+@28
+fibonacci_tb.UUT.clk_i
+fibonacci_tb.UUT.dp_o
+@22
+fibonacci_tb.UUT.fib0_next[13:0]
+fibonacci_tb.UUT.fib0_reg[13:0]
+fibonacci_tb.UUT.fib1_next[13:0]
+fibonacci_tb.UUT.fib1_reg[13:0]
+fibonacci_tb.UUT.hex[3:0]
+fibonacci_tb.UUT.iterations_bcd_i[7:0]
+@28
+fibonacci_tb.UUT.reset_i
+@29
+fibonacci_tb.UUT.seven_segment_o[6:0]
+@28
+fibonacci_tb.UUT.start_i
+fibonacci_tb.UUT.start_main
+fibonacci_tb.UUT.state_BCD_to_BIN_next
+fibonacci_tb.UUT.state_BCD_to_BIN_reg
+fibonacci_tb.UUT.state_bin_to_bcd_next
+fibonacci_tb.UUT.state_bin_to_bcd_reg
+fibonacci_tb.UUT.state_fibonacci_next
+fibonacci_tb.UUT.state_fibonacci_reg
+fibonacci_tb.UUT.state_main_next[2:0]
+fibonacci_tb.UUT.state_main_reg[2:0]
+[pattern_trace] 1
+[pattern_trace] 0

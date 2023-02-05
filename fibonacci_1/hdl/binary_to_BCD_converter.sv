@@ -30,7 +30,7 @@ module binary_to_BCD_converter #(
             state_reg <= IDLE;
             binary_reg <= 0;
             BCD_reg <= 0;
-            bit_count_reg <= N-1;
+            bit_count_reg <= N;
         end else begin
             state_reg <= state_next;
             binary_reg <= binary_next;
@@ -52,15 +52,15 @@ module binary_to_BCD_converter #(
                 if (start_i) begin
                     state_next = OP;
                     binary_next = binary_i;
-                    bit_count_next = N-1;
+                    bit_count_next = N;
                 end
             end
             OP : begin
-                {BCD_tmp, binary_next} = {BCD_reg, binary_reg} << 1;
                 
                 if (bit_count_reg == 0) begin
                     state_next = DONE;
                 end else begin
+                    {BCD_tmp, binary_next} = {BCD_reg, binary_reg} << 1;
                     bit_count_next = bit_count_reg - 1;
                     state_next = OP;
                 end

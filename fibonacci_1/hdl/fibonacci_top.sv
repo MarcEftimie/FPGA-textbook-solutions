@@ -7,7 +7,7 @@ module fibonacci_top (
     input wire [7:0] iterations_bcd_i,
     output logic [6:0] seven_segment_o,
     output logic [3:0] an_o,
-    output logic [6:0] iter_o,
+    output logic [15:0] iter_o,
     output logic dp_o
 );
 
@@ -145,6 +145,8 @@ module fibonacci_top (
                 if (done_BCD_to_bin) begin
                     iterations_bin_next = iterations_bin;
                     state_next = OP_COMPUTE_FIBONACCI;                    
+                end else begin
+                    state_next = OP_BCD_TO_BIN;
                 end
             end
             OP_COMPUTE_FIBONACCI : begin
@@ -155,6 +157,7 @@ module fibonacci_top (
                     state_next = OP_BIN_TO_BCD;
                 end else begin
                     start_fib = 1;
+                    state_next = OP_COMPUTE_FIBONACCI;
                 end
             end
             OP_BIN_TO_BCD : begin
@@ -164,6 +167,7 @@ module fibonacci_top (
                     state_next = IDLE;
                 end else begin
                     start_bin_to_bcd = 1;
+                    state_next = OP_BIN_TO_BCD;
                 end
             end
             default : state_next = IDLE;
@@ -172,6 +176,6 @@ module fibonacci_top (
 
     // Outputs
     assign dp_o = 1;
-    assign iter_o = iterations_bin_reg;
+    assign iter_o = fibonacci_num_BCD_reg;
 
 endmodule

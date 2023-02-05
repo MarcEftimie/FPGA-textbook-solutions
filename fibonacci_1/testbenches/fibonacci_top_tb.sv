@@ -10,6 +10,7 @@ module fibonacci_top_tb;
     wire [6:0] seven_segment_o;
     wire [15:0] fibonacci_num_BCD_reg;
     wire [3:0] an_o;
+    wire [6:0] iter_o;
     wire dp_o;  
 
     fibonacci_top UUT(

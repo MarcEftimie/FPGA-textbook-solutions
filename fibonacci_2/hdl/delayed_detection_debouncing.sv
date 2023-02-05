@@ -2,7 +2,7 @@
 `default_nettype none
 
 module delayed_detection_debouncing #(
-    parameter DELAY_NS = 20000000
+    parameter DELAY_NS = 2000000
     )
     (
     input wire clk_i,
@@ -61,6 +61,6 @@ module delayed_detection_debouncing #(
     end
 
     // Output Logic
-    assign debounced_o = debounced_next;
+    assign debounced_o = debounced_reg;
 
 endmodule

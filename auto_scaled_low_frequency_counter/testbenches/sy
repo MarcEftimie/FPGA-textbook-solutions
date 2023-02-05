@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sun Feb  5 20:42:22 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/auto_scaled_low_frequency_counter/period_counter.fst"
+[dumpfile_mtime] "Sun Feb  5 20:42:12 2023"
+[dumpfile_size] 708
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/auto_scaled_low_frequency_counter/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -1 -1
+*-16.000000 14 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] period_counter_tb.
+[sst_width] 233
+[signals_width] 237
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@28
+period_counter_tb.UUT.clk_i
+@22
+period_counter_tb.UUT.count_next[15:0]
+period_counter_tb.UUT.count_reg[15:0]
+@28
+period_counter_tb.UUT.done_o
+@22
+period_counter_tb.UUT.period_count_o[15:0]
+@28
+period_counter_tb.UUT.reset_i
+period_counter_tb.UUT.state_next[1:0]
+period_counter_tb.UUT.state_reg[1:0]
+period_counter_tb.UUT.tick_i
+[pattern_trace] 1
+[pattern_trace] 0

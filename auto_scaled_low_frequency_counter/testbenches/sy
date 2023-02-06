@@ -1,33 +1,67 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Sun Feb  5 20:42:22 2023
+[*] Mon Feb  6 05:43:42 2023
 [*]
-[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/auto_scaled_low_frequency_counter/period_counter.fst"
-[dumpfile_mtime] "Sun Feb  5 20:42:12 2023"
-[dumpfile_size] 708
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/auto_scaled_low_frequency_counter/auto_scaled_low_frequency_counter.fst"
+[dumpfile_mtime] "Mon Feb  6 05:43:30 2023"
+[dumpfile_size] 1666460
 [savefile] "/home/marc/projects/FPGA_Book_Solutions/auto_scaled_low_frequency_counter/testbenches/sy"
-[timestart] 0
+[timestart] 4999617000
 [size] 2486 1376
-[pos] -1 -1
-*-16.000000 14 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
-[treeopen] period_counter_tb.
+[pos] 73 26
+*-17.000000 184440 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] auto_scaled_low_frequency_counter_tb.
 [sst_width] 233
-[signals_width] 237
+[signals_width] 582
 [sst_expanded] 1
 [sst_vpaned_height] 414
-@28
-period_counter_tb.UUT.clk_i
-@22
-period_counter_tb.UUT.count_next[15:0]
-period_counter_tb.UUT.count_reg[15:0]
-@28
-period_counter_tb.UUT.done_o
-@22
-period_counter_tb.UUT.period_count_o[15:0]
-@28
-period_counter_tb.UUT.reset_i
-period_counter_tb.UUT.state_next[1:0]
-period_counter_tb.UUT.state_reg[1:0]
-period_counter_tb.UUT.tick_i
+@200
+-Division
+-dsadsad
+@23
+auto_scaled_low_frequency_counter_tb.UUT.an_o[3:0]
+auto_scaled_low_frequency_counter_tb.UUT.bcd[31:0]
+auto_scaled_low_frequency_counter_tb.UUT.bcd_next[31:0]
+auto_scaled_low_frequency_counter_tb.UUT.bcd_normalized[31:0]
+auto_scaled_low_frequency_counter_tb.UUT.bcd_normalized_next[31:0]
+auto_scaled_low_frequency_counter_tb.UUT.bcd_normalized_reg[31:0]
+auto_scaled_low_frequency_counter_tb.UUT.bcd_reg[31:0]
+@29
+auto_scaled_low_frequency_counter_tb.UUT.btn_i
+auto_scaled_low_frequency_counter_tb.UUT.btn_tick
+auto_scaled_low_frequency_counter_tb.UUT.clk_i
+auto_scaled_low_frequency_counter_tb.UUT.done_bcd_normalizer
+auto_scaled_low_frequency_counter_tb.UUT.done_bin_to_bcd
+auto_scaled_low_frequency_counter_tb.UUT.done_division
+auto_scaled_low_frequency_counter_tb.UUT.done_period_counter
+auto_scaled_low_frequency_counter_tb.UUT.dp_o
+@23
+auto_scaled_low_frequency_counter_tb.UUT.frequency[23:0]
+auto_scaled_low_frequency_counter_tb.UUT.frequency_next[23:0]
+auto_scaled_low_frequency_counter_tb.UUT.frequency_reg[23:0]
+auto_scaled_low_frequency_counter_tb.UUT.hex[3:0]
+auto_scaled_low_frequency_counter_tb.UUT.in0[4:0]
+auto_scaled_low_frequency_counter_tb.UUT.in1[4:0]
+auto_scaled_low_frequency_counter_tb.UUT.in2[4:0]
+auto_scaled_low_frequency_counter_tb.UUT.in3[4:0]
+auto_scaled_low_frequency_counter_tb.UUT.period_count[31:0]
+auto_scaled_low_frequency_counter_tb.UUT.period_count_next[31:0]
+auto_scaled_low_frequency_counter_tb.UUT.period_count_reg[31:0]
+auto_scaled_low_frequency_counter_tb.UUT.power[3:0]
+@29
+auto_scaled_low_frequency_counter_tb.UUT.reset_i
+@23
+auto_scaled_low_frequency_counter_tb.UUT.seven_segment_o[6:0]
+@29
+auto_scaled_low_frequency_counter_tb.UUT.start_bcd_normalizer_next
+auto_scaled_low_frequency_counter_tb.UUT.start_bcd_normalizer_reg
+auto_scaled_low_frequency_counter_tb.UUT.start_bin_to_bcd_next
+auto_scaled_low_frequency_counter_tb.UUT.start_bin_to_bcd_reg
+auto_scaled_low_frequency_counter_tb.UUT.start_division_next
+auto_scaled_low_frequency_counter_tb.UUT.start_division_reg
+auto_scaled_low_frequency_counter_tb.UUT.state_next[2:0]
+auto_scaled_low_frequency_counter_tb.UUT.state_reg[2:0]
+@23
+auto_scaled_low_frequency_counter_tb.UUT.test_o[15:0]
 [pattern_trace] 1
 [pattern_trace] 0

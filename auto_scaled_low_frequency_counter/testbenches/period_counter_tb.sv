@@ -6,7 +6,7 @@ module period_counter_tb;
     parameter CLK_PERIOD_NS = 10;
     logic clk_i, reset_i;
     logic tick_i;
-    wire [15:0] period_count_o;
+    wire [31:0] period_count_o;
     wire done_o;
 
     period_counter UUT(
@@ -35,7 +35,7 @@ module period_counter_tb;
         tick_i = 1;
         repeat(1) @(negedge clk_i);
         tick_i = 0;
-        repeat(4) @(negedge clk_i);
+        repeat(250) @(negedge clk_i);
         tick_i = 1;
         repeat(1) @(negedge clk_i);
         tick_i = 0;

@@ -1,0 +1,61 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Tue Feb  7 04:15:57 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/reaction_timer/reaction_timer.fst"
+[dumpfile_mtime] "Tue Feb  7 04:15:15 2023"
+[dumpfile_size] 15301636
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/reaction_timer/testbenches/sy"
+[timestart] 1000127600
+[size] 2486 1376
+[pos] -1 -1
+*-16.000000 1000379890 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] reaction_timer_tb.
+[treeopen] reaction_timer_tb.UUT.
+[sst_width] 233
+[signals_width] 331
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@22
+reaction_timer_tb.UUT.an_o[3:0]
+reaction_timer_tb.UUT.bcd[19:0]
+reaction_timer_tb.UUT.bcd_next[19:0]
+reaction_timer_tb.UUT.bcd_reg[19:0]
+@28
+reaction_timer_tb.UUT.clear_i
+reaction_timer_tb.UUT.clear_tick
+reaction_timer_tb.UUT.clk_i
+@22
+reaction_timer_tb.UUT.delay_count_next[26:0]
+reaction_timer_tb.UUT.delay_count_reg[26:0]
+@28
+reaction_timer_tb.UUT.done_bin_to_bcd_reg
+reaction_timer_tb.UUT.done_period_counter
+reaction_timer_tb.UUT.dp_o
+@22
+reaction_timer_tb.UUT.hex[7:0]
+reaction_timer_tb.UUT.in0[7:0]
+reaction_timer_tb.UUT.in1[7:0]
+reaction_timer_tb.UUT.in2[7:0]
+reaction_timer_tb.UUT.in3[7:0]
+@28
+reaction_timer_tb.UUT.period_changed_o
+@22
+reaction_timer_tb.UUT.period_count[13:0]
+@28
+reaction_timer_tb.UUT.reset_i
+@22
+reaction_timer_tb.UUT.seven_segment_o[6:0]
+@28
+reaction_timer_tb.UUT.start_bin_to_bcd_next
+reaction_timer_tb.UUT.start_bin_to_bcd_reg
+reaction_timer_tb.UUT.start_i
+reaction_timer_tb.UUT.start_tick
+reaction_timer_tb.UUT.state_next[1:0]
+reaction_timer_tb.UUT.state_reg[1:0]
+reaction_timer_tb.UUT.stop_i
+reaction_timer_tb.UUT.stop_tick
+reaction_timer_tb.UUT.tick_next
+reaction_timer_tb.UUT.tick_reg
+[pattern_trace] 1
+[pattern_trace] 0

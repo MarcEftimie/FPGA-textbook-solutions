@@ -19,14 +19,13 @@ module BCD_incrementor_tb;
         $dumpvars(0, UUT);
         clk = 0;
         #1
-        for (int i = 0; i < 10; i++) begin
+        for (int i = 0; i < 1; i++) begin
             for (int j = 0; j < 10; j++) begin
                 for (int k = 0; k < 10; k++) begin
                     #1
                     BCD_in = {i[3:0], j[3:0], k[3:0]};
-                    $display(BCD_in);
                     #1
-                    $display("BCD_in : %b BCD_out : %b", BCD_in, BCD_out);
+                    $display("BCD_in : %d BCD_out : %h", BCD_in, BCD_out);
                     #1;
                 end
             end

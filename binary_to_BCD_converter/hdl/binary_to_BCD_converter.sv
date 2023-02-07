@@ -2,13 +2,14 @@
 `default_nettype none
 
 module binary_to_BCD_converter #(
-    parameter N = 14
+    parameter bin_N = 16,
+    parameter bcd_N = 32
     ) (
     input wire clk_i, reset_i,
     input wire start_i,
-    input wire [N-1:0] binary_i,
+    input wire [bin_N-1:0] binary_i,
     output logic ready_o, done_o,
-    output logic [15:0] BCD_o
+    output logic [bcd_N-1:0] BCD_o
 );
 
     // Declarations
@@ -20,9 +21,9 @@ module binary_to_BCD_converter #(
 
     state_d state_reg, state_next;
 
-    logic [N-1:0] binary_reg, binary_next, binary_tmp;
-    logic [15:0] BCD_reg, BCD_next, BCD_tmp;
-    logic [$clog2(N):0] bit_count_reg, bit_count_next;
+    logic [bin_N-1:0] binary_reg, binary_next, binary_tmp;
+    logic [bcd_N-1:0] BCD_reg, BCD_next, BCD_tmp;
+    logic [$clog2(bin_N):0] bit_count_reg, bit_count_next;
 
     // Registers
     always_ff @(posedge clk_i, posedge reset_i) begin
@@ -30,7 +31,7 @@ module binary_to_BCD_converter #(
             state_reg <= IDLE;
             binary_reg <= 0;
             BCD_reg <= 0;
-            bit_count_reg <= N-1;
+            bit_count_reg <= bin_N-1;
         end else begin
             state_reg <= state_next;
             binary_reg <= binary_next;
@@ -44,6 +45,7 @@ module binary_to_BCD_converter #(
         state_next = state_reg;
         binary_next = binary_reg;
         bit_count_next = bit_count_reg;
+        BCD_tmp = 0;
         done_o = 0;
         ready_o = 0;
         case(state_reg)
@@ -52,21 +54,21 @@ module binary_to_BCD_converter #(
                 if (start_i) begin
                     state_next = OP;
                     binary_next = binary_i;
-                    bit_count_next = N-1;
+                    bit_count_next = bin_N-1;
                 end
             end
             OP : begin
-                {BCD_tmp, binary_next} = {BCD_reg, binary_reg} << 1;
-                
-                if (bit_count_reg == 0) begin
-                    state_next = DONE;
-                end else begin
+                if (bit_count_reg > 0) begin
+                    {BCD_tmp, binary_next[bin_N-1:0]} = {BCD_reg, binary_reg[bin_N-1:0]} << 1;
                     bit_count_next = bit_count_reg - 1;
                     state_next = OP;
+                end else begin
+                    {BCD_tmp, binary_next[bin_N-1:0]} = {BCD_reg, binary_reg[bin_N-1:0]} << 1;
+                    state_next = DONE;
+                    done_o = 1;
                 end
             end
             DONE : begin
-                done_o = 1;
                 state_next = IDLE;
             end
             default : begin
@@ -78,8 +80,8 @@ module binary_to_BCD_converter #(
     // Datapath Logic
     genvar i;
     generate
-        for (i=0; i<15; i=i+4) begin
-            assign BCD_next[i+3:i] = (state_reg == OP) ? ((BCD_tmp[i+3:i] > 4) ? BCD_tmp[i+3:i]+3 : BCD_tmp[i+3:i]) : 4'b0000;
+        for (i=0; i<bcd_N-2; i=i+4) begin
+            assign BCD_next[i+3:i] = (state_reg == OP) ? ((BCD_tmp[i+3:i] > 4) ? BCD_tmp[i+3:i]+3 : BCD_tmp[i+3:i]) : 4'h0;
         end
     endgenerate
 

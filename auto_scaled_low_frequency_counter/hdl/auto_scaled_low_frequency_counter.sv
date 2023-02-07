@@ -190,6 +190,7 @@ module auto_scaled_low_frequency_counter #(
         endcase
     end
 
+
     assign in0 = {1'b1, bcd_normalized_reg[bcd_N-13:bcd_N-16]};
     assign in1 = {1'b1, bcd_normalized_reg[bcd_N-9:bcd_N-12]};
     assign in2 = {1'b1, bcd_normalized_reg[bcd_N-5:bcd_N-8]};            

@@ -58,6 +58,16 @@ module reaction_timer #(
         .tick_o(stop_tick)
     );
 
+    logic sample_random_delay;
+    logic [29:0] random_delay;
+
+    random_delay_generator RANDOM_DELAY_GENERATOR (
+        .clk_i(clk_i),
+        .reset_i(reset_i),
+        .sample_i(sample_random_delay),
+        .random_delay_o(random_delay)
+    );
+
     logic done_period_counter;
     logic [TICK_N-1:0] period_count;
     logic tick_reg, tick_next;
@@ -111,7 +121,7 @@ module reaction_timer #(
         .sseg_o(seven_segment_o)
     );
 
-    logic [26:0] delay_count_reg, delay_count_next;
+    logic [29:0] delay_count_reg, delay_count_next;
 
     // Registers
     always_ff @(posedge clk_i, posedge reset_i) begin
@@ -137,15 +147,17 @@ module reaction_timer #(
         tick_next = 0;
         delay_count_next = delay_count_reg;
         bcd_next = bcd_reg;
+        sample_random_delay = 0;
         case (state_reg)
             IDLE : begin
                 if (start_tick) begin
                     delay_count_next = 0;
                     state_next = START;
+                    sample_random_delay = 1;
                 end
             end
             START : begin
-                if (delay_count_reg < 100000000) begin // 100000000
+                if ((delay_count_reg < 200000000) | (delay_count_next < random_delay)) begin // 100000000
                     delay_count_next = delay_count_reg + 1;
                 end else begin
                     tick_next = 1;
@@ -174,19 +186,19 @@ module reaction_timer #(
     end
 
     assign in0 = (state_reg == IDLE)     ?  8'hFF :
-                 (state_reg == START)    ?  8'hFF :
+                 (state_reg == START)    ?  8'h00 :
                  (state_reg == COUNT_UP) ?  bcd_reg[3:0] :
                  (state_reg == STOP)     ?  bcd_reg[3:0] : 8'h00;
     assign in1 = (state_reg == IDLE)     ?  8'hFF :
-                 (state_reg == START)    ?  8'hFF :
+                 (state_reg == START)    ?  8'h00 :
                  (state_reg == COUNT_UP) ?  bcd_reg[7:4] :
                  (state_reg == STOP)     ?  bcd_reg[7:4] : 8'h00;
     assign in2 = (state_reg == IDLE)     ?  8'b11001111 :
-                 (state_reg == START)    ?  8'hFF :
+                 (state_reg == START)    ?  8'h00 :
                  (state_reg == COUNT_UP) ?  bcd_reg[11:8] :
                  (state_reg == STOP)     ?  bcd_reg[11:8] : 8'h00;
     assign in3 = (state_reg == IDLE)     ?  8'b10001001 :
-                 (state_reg == START)    ?  8'hFF :
+                 (state_reg == START)    ?  8'h00 :
                  (state_reg == COUNT_UP) ?  bcd_reg[15:12] :
                  (state_reg == STOP)     ?  bcd_reg[15:12] : 8'h00;
 

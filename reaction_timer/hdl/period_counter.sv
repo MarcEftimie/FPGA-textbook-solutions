@@ -56,9 +56,13 @@ module period_counter #(
                 if (count_reg < 100000) begin // 100000
                     count_next = count_reg + 1;
                 end else begin
-                    period_changed_o = 1;
-                    tick_count_next = tick_count_reg + 1;
-                    count_next = 0;
+                    if (tick_count_reg == 9999) begin
+                        state_next = DONE;
+                    end else begin
+                        period_changed_o = 1;
+                        tick_count_next = tick_count_reg + 1;
+                        count_next = 0;
+                    end
                 end
                 if (tick_i) begin
                     state_next = DONE;

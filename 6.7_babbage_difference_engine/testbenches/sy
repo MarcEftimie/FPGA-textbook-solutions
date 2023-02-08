@@ -1,0 +1,43 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Wed Feb  8 07:11:21 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/6.7_babbage_difference_engine/babbage_difference_engine.fst"
+[dumpfile_mtime] "Wed Feb  8 07:07:23 2023"
+[dumpfile_size] 886
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/6.7_babbage_difference_engine/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -1 -1
+*-14.000000 117470 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] babbage_difference_engine_tb.
+[sst_width] 233
+[signals_width] 257
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@28
+babbage_difference_engine_tb.UUT.clk_i
+babbage_difference_engine_tb.UUT.compute_i
+@24
+babbage_difference_engine_tb.UUT.difference_next[15:0]
+babbage_difference_engine_tb.UUT.difference_reg[15:0]
+@28
+babbage_difference_engine_tb.UUT.done
+@24
+babbage_difference_engine_tb.UUT.f_of_n1_next[15:0]
+babbage_difference_engine_tb.UUT.f_of_n1_reg[15:0]
+@22
+babbage_difference_engine_tb.UUT.f_of_n2_next[15:0]
+babbage_difference_engine_tb.UUT.f_of_n2_reg[15:0]
+@25
+babbage_difference_engine_tb.UUT.f_of_n_o[15:0]
+@22
+babbage_difference_engine_tb.UUT.iter_next[5:0]
+babbage_difference_engine_tb.UUT.iter_reg[5:0]
+babbage_difference_engine_tb.UUT.n[5:0]
+@28
+babbage_difference_engine_tb.UUT.reset_i
+babbage_difference_engine_tb.UUT.state_next[1:0]
+babbage_difference_engine_tb.UUT.state_reg[1:0]
+[pattern_trace] 1
+[pattern_trace] 0

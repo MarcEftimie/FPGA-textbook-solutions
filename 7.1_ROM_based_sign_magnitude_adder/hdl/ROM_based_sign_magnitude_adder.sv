@@ -8,7 +8,7 @@ module ROM_based_sign_magnitude_adder
     ) (
     input wire clk_i,
     input wire [3:0] a_i, b_i,
-    output logic [4:0] sum_o
+    output logic [DATA_WIDTH-1:0] sum_o
 );
 
     // Declarations

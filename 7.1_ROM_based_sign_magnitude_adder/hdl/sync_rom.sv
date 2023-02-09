@@ -12,10 +12,12 @@ module sync_rom
     );
 
     // Declarations
-    logic [ADDR_WIDTH-1:0] rom [0:DATA_WIDTH-1];
+    logic [DATA_WIDTH-1:0] rom [0:(2**ADDR_WIDTH)-1];
     logic [DATA_WIDTH-1:0] data_reg;
 
-    initial $readmemb("./rom.txt", rom);
+    initial begin 
+        $readmemb("rom.txt", rom);
+    end
 
     always_ff @(posedge clk_i) begin
         data_reg <= rom[addr_i];

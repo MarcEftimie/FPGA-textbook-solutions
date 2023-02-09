@@ -1,0 +1,35 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Thu Feb  9 16:58:29 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/7.1_ROM_based_sign_magnitude_adder/ROM_based_sign_magnitude_adder.fst"
+[dumpfile_mtime] "Thu Feb  9 16:57:44 2023"
+[dumpfile_size] 1081
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/7.1_ROM_based_sign_magnitude_adder/testbenches/sy"
+[timestart] 0
+[size] 1846 1016
+[pos] -101 -101
+*-22.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ROM_based_sign_magnitude_adder_tb.
+[treeopen] ROM_based_sign_magnitude_adder_tb.UUT.
+[sst_width] 233
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@22
+ROM_based_sign_magnitude_adder_tb.UUT.a_i[3:0]
+ROM_based_sign_magnitude_adder_tb.UUT.b_i[3:0]
+@28
+ROM_based_sign_magnitude_adder_tb.UUT.clk_i
+@22
+ROM_based_sign_magnitude_adder_tb.UUT.read_addr[7:0]
+ROM_based_sign_magnitude_adder_tb.UUT.sum_o[4:0]
+@23
+ROM_based_sign_magnitude_adder_tb.UUT.SYNC_ROM.addr_i[7:0]
+@29
+ROM_based_sign_magnitude_adder_tb.UUT.SYNC_ROM.clk_i
+@23
+ROM_based_sign_magnitude_adder_tb.UUT.SYNC_ROM.data_o[4:0]
+ROM_based_sign_magnitude_adder_tb.UUT.SYNC_ROM.data_reg[4:0]
+[pattern_trace] 1
+[pattern_trace] 0

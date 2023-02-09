@@ -25,7 +25,7 @@ module ROM_based_sign_magnitude_adder_tb;
         clk_i = 0;
         repeat(2) @(negedge clk_i);
         for (int i=0; i<16; i++) begin
-            for (int j=i; j<16; j++) begin
+            for (int j=0; j<16; j++) begin
                 a_i = i;
                 b_i = j;
                 repeat(2) @(negedge clk_i);

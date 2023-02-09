@@ -25,11 +25,7 @@ module ROM_based_sign_magnitude_adder
 
     // Logic
     always_comb begin
-        if (a_i > b_i) begin
-            read_addr = {b_i, a_i};
-        end else begin
-            read_addr = {a_i, b_i};
-        end
+        read_addr = {a_i, b_i};
     end
 
 endmodule

@@ -4,7 +4,7 @@
 module sync_rom 
     # (
         parameter ADDR_WIDTH = 8,
-        parameter DATA_WIDTH = 5
+        parameter DATA_WIDTH = 8
     ) (
         input logic clk_i,
         input logic [ADDR_WIDTH-1:0] addr_i,

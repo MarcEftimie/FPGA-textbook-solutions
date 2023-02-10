@@ -1,28 +1,43 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Fri Feb 10 06:14:17 2023
+[*] Fri Feb 10 19:37:27 2023
 [*]
-[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/7.2_ROM_based_temperature_converter/ROM_based_temperature_converter.fst"
-[dumpfile_mtime] "Fri Feb 10 06:14:02 2023"
-[dumpfile_size] 1772
-[savefile] "/home/marc/projects/FPGA_Book_Solutions/7.2_ROM_based_temperature_converter/testbenches/sy"
-[timestart] 3643900
-[size] 1846 1016
-[pos] -1 -1
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/7.3_FIFO_data_width_conversion/FIFO_controller.fst"
+[dumpfile_mtime] "Fri Feb 10 19:37:22 2023"
+[dumpfile_size] 731
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/7.3_FIFO_data_width_conversion/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -39 -39
 *-17.000000 4012800 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
-[treeopen] ROM_based_temperature_converter_tb.
+[treeopen] FIFO_controller_tb.
 [sst_width] 233
 [signals_width] 221
 [sst_expanded] 1
-[sst_vpaned_height] 289
+[sst_vpaned_height] 415
 @28
-ROM_based_temperature_converter_tb.UUT.clk_i
-@25
-ROM_based_temperature_converter_tb.UUT.read_addr[8:0]
-@24
-ROM_based_temperature_converter_tb.UUT.temperature_i[7:0]
-ROM_based_temperature_converter_tb.UUT.temperature_o[7:0]
+FIFO_controller_tb.UUT.clk_i
+FIFO_controller_tb.UUT.empty_next
+FIFO_controller_tb.UUT.empty_o
+FIFO_controller_tb.UUT.empty_reg
+FIFO_controller_tb.UUT.full_next
+FIFO_controller_tb.UUT.full_o
+FIFO_controller_tb.UUT.full_reg
+@22
+FIFO_controller_tb.UUT.read_address_o[3:0]
 @28
-ROM_based_temperature_converter_tb.UUT.unit_i
+FIFO_controller_tb.UUT.read_i
+@22
+FIFO_controller_tb.UUT.read_pointer_next[3:0]
+FIFO_controller_tb.UUT.read_pointer_reg[3:0]
+@28
+FIFO_controller_tb.UUT.reset_i
+@22
+FIFO_controller_tb.UUT.write_address_o[3:0]
+@28
+FIFO_controller_tb.UUT.write_i
+@22
+FIFO_controller_tb.UUT.write_pointer_next[3:0]
+FIFO_controller_tb.UUT.write_pointer_reg[3:0]
 [pattern_trace] 1
 [pattern_trace] 0

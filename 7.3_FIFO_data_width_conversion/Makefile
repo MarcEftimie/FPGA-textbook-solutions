@@ -12,6 +12,9 @@ SRCS=hdl/*.sv
 test_FIFO_data_width_conversion : testbenches/FIFO_data_width_conversion_tb.sv ${SRCS}
 	${IVERILOG} $^ -o FIFO_data_width_conversion_tb.bin && ${VVP} FIFO_data_width_conversion_tb.bin ${VVP_POST} && gtkwave FIFO_data_width_conversion.fst -a testbenches/sy
 
+test_FIFO_controller : testbenches/FIFO_controller_tb.sv ${SRCS}
+	${IVERILOG} $^ -o FIFO_controller_tb.bin && ${VVP} FIFO_controller_tb.bin ${VVP_POST} && gtkwave FIFO_controller.fst -a testbenches/sy
+
 # Call this to clean up all your generated files
 clean:
 	rm -f *.bin *.vcd *.fst vivado*.log *.jou vivado*.str *.log *.checkpoint *.bit *.html *.xml *.out

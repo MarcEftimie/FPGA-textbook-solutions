@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 `default_nettype none
 
-module ROM_based_temperature_converter_tb;
+module FIFO_data_width_conversion_tb;
 
     parameter CLK_PERIOD_NS = 10;
     parameter ADDR_WIDTH = 9;
@@ -11,7 +11,7 @@ module ROM_based_temperature_converter_tb;
     logic unit_i;
     wire [DATA_WIDTH-1:0] temperature_o;
 
-    ROM_based_temperature_converter #(
+    FIFO_data_width_conversion #(
         .ADDR_WIDTH(ADDR_WIDTH),
         .DATA_WIDTH(DATA_WIDTH)
         ) UUT(
@@ -21,7 +21,7 @@ module ROM_based_temperature_converter_tb;
     always #(CLK_PERIOD_NS/2) clk_i = ~clk_i;
 
     initial begin
-        $dumpfile("ROM_based_temperature_converter.fst");
+        $dumpfile("FIFO_data_width_conversion.fst");
         $dumpvars(0, UUT);
         clk_i = 0;
         unit_i = 0;

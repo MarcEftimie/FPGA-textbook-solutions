@@ -3,7 +3,7 @@
 
 module FIFO_controller_width_conversion
     #(
-        localparam ADDR_WIDTH = 4
+        parameter ADDR_WIDTH = 4
     ) (
     input wire clk_i, reset_i,
     input wire read_i, write_i,
@@ -46,27 +46,25 @@ module FIFO_controller_width_conversion
                 if (~empty_reg) begin
                     read_pointer_next = read_pointer_reg + 1;
                     full_next = 0;
-                    if (read_pointer_next == write_pointer_1_reg) begin
+                    if (read_pointer_next == write_pointer_2_reg) begin
                         empty_next = 1;
                     end
                 end
             end
             2'b10 : begin
-                if (~full_reg | (write_pointer_2_reg + 1 != read_pointer_reg)) begin
-                    write_pointer_1_next = write_pointer_1_reg + 1;
-                    write_pointer_2_next = write_pointer_2_reg + 1;
+                if (~full_reg) begin
+                    write_pointer_1_next = write_pointer_1_reg + 2;
+                    write_pointer_2_next = write_pointer_2_reg + 2;
                     empty_next = 0;
-                    if ((write_pointer_1_next == read_pointer_reg) | (write_pointer_2_next == read_pointer_reg)) begin
+                    if ((write_pointer_2_next == read_pointer_reg) | (write_pointer_1_next == read_pointer_reg)) begin
                         full_next = 1;
                     end
                 end
             end
             2'b11 : begin
+                write_pointer_1_next = write_pointer_1_reg + 1;
+                write_pointer_2_next = write_pointer_2_reg + 1;
                 read_pointer_next = read_pointer_reg + 1;
-                if (write_pointer_2_reg + 1 == read_pointer_next) begin
-                    write_pointer_1_next = write_pointer_1_reg + 1;
-                    write_pointer_2_next = write_pointer_2_reg + 1;
-                end
             end
             default : ;
         endcase

@@ -1,0 +1,55 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sun Feb 12 01:10:35 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/7.6_Stack/stack.fst"
+[dumpfile_mtime] "Sun Feb 12 01:09:53 2023"
+[dumpfile_size] 910
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/7.6_Stack/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -1 -1
+*-15.000000 74700 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] stack_tb.
+[treeopen] stack_tb.UUT.
+[sst_width] 233
+[signals_width] 238
+[sst_expanded] 1
+[sst_vpaned_height] 595
+@22
+stack_tb.UUT.address[3:0]
+@28
+stack_tb.UUT.clk_i
+stack_tb.UUT.empty_o
+stack_tb.UUT.full_o
+stack_tb.UUT.pop_i
+stack_tb.UUT.push_i
+@22
+stack_tb.UUT.read_data_o[3:0]
+@28
+stack_tb.UUT.reset_i
+@22
+stack_tb.UUT.write_data_i[3:0]
+@28
+stack_tb.UUT.write_en
+@23
+stack_tb.UUT.STACK_CONTROLLER.address_o[3:0]
+@29
+stack_tb.UUT.STACK_CONTROLLER.clk_i
+stack_tb.UUT.STACK_CONTROLLER.empty_next
+stack_tb.UUT.STACK_CONTROLLER.empty_o
+stack_tb.UUT.STACK_CONTROLLER.empty_reg
+stack_tb.UUT.STACK_CONTROLLER.full_next
+stack_tb.UUT.STACK_CONTROLLER.full_o
+stack_tb.UUT.STACK_CONTROLLER.full_reg
+@23
+stack_tb.UUT.STACK_CONTROLLER.pointer_next[3:0]
+stack_tb.UUT.STACK_CONTROLLER.pointer_out_next[3:0]
+stack_tb.UUT.STACK_CONTROLLER.pointer_out_reg[3:0]
+stack_tb.UUT.STACK_CONTROLLER.pointer_reg[3:0]
+@29
+stack_tb.UUT.STACK_CONTROLLER.pop_i
+stack_tb.UUT.STACK_CONTROLLER.push_i
+stack_tb.UUT.STACK_CONTROLLER.reset_i
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,33 +1,30 @@
 `timescale 1ns/1ps
 `default_nettype none
 
-module FIFO_buffer
+module stack
     #(
         parameter ADDR_WIDTH = 4,
         parameter DATA_WIDTH = 4
     ) (
     input wire clk_i, reset_i,
-    input wire read_i, write_i,
+    input wire pop_i, push_i,
     input wire [DATA_WIDTH-1:0] write_data_i,
-    output logic empty_o, full_o, almost_empty_o, almost_full_o,
+    output logic empty_o, full_o,
     output logic [DATA_WIDTH-1:0] read_data_o
 );
 
-    logic [ADDR_WIDTH-1:0] write_address, read_address;
+    logic [ADDR_WIDTH-1:0] address;
 
-    FIFO_controller #(
+    stack_controller #(
         .ADDR_WIDTH(ADDR_WIDTH)
-    ) FIFO_CONTROLLER(
+    ) STACK_CONTROLLER(
         .clk_i(clk_i),
         .reset_i(reset_i),
-        .read_i(read_i),
-        .write_i(write_i),
+        .pop_i(pop_i),
+        .push_i(push_i),
         .empty_o(empty_o),
         .full_o(full_o),
-        .almost_empty_o(almost_empty_o),
-        .almost_full_o(almost_full_o),
-        .write_address_o(write_address),
-        .read_address_o(read_address)
+        .address_o(address)
     );
 
     logic write_en;
@@ -38,12 +35,12 @@ module FIFO_buffer
     ) REGISTER_FILE (
         .clk_i(clk_i),
         .write_en(write_en),
-        .write_address_i(write_address),
-        .read_address_i(read_address),
+        .write_address_i(address),
+        .read_address_i(address),
         .write_data_i(write_data_i[3:0]),
         .read_data_o(read_data_o)
     );
 
-    assign write_en = write_i & ~full_o;
+    assign write_en = push_i & ~full_o;
 
 endmodule

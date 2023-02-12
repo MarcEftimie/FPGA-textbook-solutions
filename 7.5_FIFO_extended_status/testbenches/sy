@@ -1,0 +1,49 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sun Feb 12 00:37:36 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/7.5_FIFO_extended_status/FIFO_controller.fst"
+[dumpfile_mtime] "Sun Feb 12 00:37:30 2023"
+[dumpfile_size] 1208
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/7.5_FIFO_extended_status/testbenches/sy"
+[timestart] 0
+[size] 2486 1376
+[pos] -1 -1
+*-15.000000 107100 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] FIFO_controller_tb.
+[sst_width] 233
+[signals_width] 238
+[sst_expanded] 1
+[sst_vpaned_height] 595
+@28
+FIFO_controller_tb.UUT.almost_empty_o
+FIFO_controller_tb.UUT.almost_full_o
+FIFO_controller_tb.UUT.clk_i
+FIFO_controller_tb.UUT.empty_next
+FIFO_controller_tb.UUT.empty_o
+FIFO_controller_tb.UUT.empty_reg
+FIFO_controller_tb.UUT.full_next
+FIFO_controller_tb.UUT.full_o
+FIFO_controller_tb.UUT.full_reg
+@22
+FIFO_controller_tb.UUT.read_address_o[3:0]
+@28
+FIFO_controller_tb.UUT.read_i
+@22
+FIFO_controller_tb.UUT.read_pointer_next[3:0]
+FIFO_controller_tb.UUT.read_pointer_out_next[3:0]
+FIFO_controller_tb.UUT.read_pointer_out_reg[3:0]
+FIFO_controller_tb.UUT.read_pointer_reg[3:0]
+@28
+FIFO_controller_tb.UUT.reset_i
+@22
+FIFO_controller_tb.UUT.word_count_next[3:0]
+FIFO_controller_tb.UUT.word_count_reg[3:0]
+FIFO_controller_tb.UUT.write_address_o[3:0]
+@28
+FIFO_controller_tb.UUT.write_i
+@22
+FIFO_controller_tb.UUT.write_pointer_next[3:0]
+FIFO_controller_tb.UUT.write_pointer_reg[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

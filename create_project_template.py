@@ -1,3 +1,4 @@
+# Very crude file that generates project templates
 import os, shutil
 
 # Ask User Input
@@ -23,8 +24,7 @@ module {main_file_name}
         input wire clk_i, reset_i
     );
 
-endmodule;
-    """)
+endmodule""")
 f.close()
 
 # Create Makefile
@@ -39,8 +39,8 @@ SRCS=hdl/*.sv
 .PHONY: clean submission remove_solutions
 
 clean:
-rm -f *.bin *.vcd *.fst vivado*.log *.jou vivado*.str *.log *.checkpoint *.bit *.html *.xml *.out
-rm -rf .Xil
+\trm -f *.bin *.vcd *.fst vivado*.log *.jou vivado*.str *.log *.checkpoint *.bit *.html *.xml *.out
+\trm -rf .Xil
 
 ###
 

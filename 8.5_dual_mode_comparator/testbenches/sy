@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Feb 13 15:38:29 2023
+[*]
+[dumpfile] "/home/marc/projects/FPGA_Book_Solutions/8.5_dual_mode_comparator/dual_mode_comparator.fst"
+[dumpfile_mtime] "Mon Feb 13 15:38:18 2023"
+[dumpfile_size] 688
+[savefile] "/home/marc/projects/FPGA_Book_Solutions/8.5_dual_mode_comparator/testbenches/sy"
+[timestart] 0
+[size] 1846 1016
+[pos] -1 -1
+*-14.000000 3680 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] dual_mode_comparator_tb.
+[sst_width] 233
+[signals_width] 117
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@28
+dual_mode_comparator_tb.UUT.agtb_o
+dual_mode_comparator_tb.UUT.clk_i
+dual_mode_comparator_tb.UUT.signed_i
+@25
+dual_mode_comparator_tb.UUT.a_i[7:0]
+dual_mode_comparator_tb.UUT.b_i[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

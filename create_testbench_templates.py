@@ -49,7 +49,7 @@ for idx, sv_file in enumerate(sv_files):
         param = parameters.lstrip("parameter ").split(" = ", 1)[0]
         parameter_declarations += f"\n        .{param}({param}),"
     for inputs in write_lines[idx][1]:
-        io_declarations += f"\n    {inputs};"
+        io_declarations += f"\n    logic {inputs};"
     for outputs in write_lines[idx][2]:
         io_declarations += f"\n    wire {outputs};"
     io_declarations = io_declarations.removesuffix(",")
